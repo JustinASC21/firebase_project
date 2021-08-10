@@ -5,11 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Firebase Project</title>
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+
+    <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+        apiKey: "AIzaSyCY9cJ9WH86oOx-qwJYTnPAlRZ157FPrL4",
+        authDomain: "fir-blog-891f4.firebaseapp.com",
+        projectId: "fir-blog-891f4",
+        storageBucket: "fir-blog-891f4.appspot.com",
+        messagingSenderId: "382067623982",
+        appId: "1:382067623982:web:f446ae83801b48ae63f7bf",
+        measurementId: "G-MNWHV7MKB6"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    </script>
+
     <!-- Link your CSS, and JS files here: -->
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 
     
 </head>
 <body>
+    <div id="header">
+        <img src="https://cdn.wccftech.com/wp-content/uploads/2016/09/spacee-2060x1288.jpg" alt="Space">
+    </div>
+
+    <h1>All About Space</h1>
+    <!-- First part of our blog to submit items -->
+    <form>
+        <div id = "form">
+
+            <input type="text" placeholder="Post Title" id="title">
+            <input type="text" placeholder="Name: " id = "name">
+            <input type = "text" placeholder="Planet" id="planet">
+            <input type = "text" placeholder="Type here..." id="text">
+            <button id="submit">Submit</button>
+
+        </div>
+
+    </form>
+
+    <div id = "Conversation">
+        <!-- here goes the blogs from around the universe -->
+
+
+    </div>
     
 </body>
 </html>
